@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body
+        {
+            position: absolute;
+            width: 100%;
+            height: 120%;
+            background: red;
+        }
+        .cp
+        {
+            position:absolute;
+            left: 25px;
+            top:20px;
+            width: 1290px;
+            height: 580px;
+            border: black 5px solid;
+            background: white;
+        }
+        #c
+        {
+            position: absolute;
+            left: 600px;
+            top:240px;
+            width: 175px;
+            height: 150px;
+            border: black 5px solid;
+            background: orange;
+        }
+        .p1
+        {
+            position: absolute;
+        left: 400px;
+        top: 630px;
+        width: 150px;
+        height: 100px;
+        background: greenyellow;
+        }
+        .p2
+        {
+            position: absolute;
+        left: 800px;
+        top: 630px;
+        width: 150px;
+        height: 100px;
+        background: greenyellow;
+        }
+        .t
+        {
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            font-size: 50px;
+            font-weight: 100;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <audio src="silbido.m4a" id="au"></audio>
+    <div class="cp">
+        <div id="c" onclick="sr()"></div>
+    </div>
+    <a href="index1.html">
+        <div class="p1"><div class="t" style="font-size: 25px;left:0px;top:0px;">MENÚ DINÁMICO</div></div>
+    </a>
+    <a href="index.html">
+     <div class="p2"><div class="t" style="font-size: 25px;left:0px;top:0px;">INICIO</div></div>
+</body>
+<script>
+function sr()
+{
+    au.play();
+    x=num=Math.floor((Math.random() * (1105-1))+1);
+    y=num=Math.floor((Math.random() * (420-1))+1);
+    
+    c.style.left=x+"px";
+    c.style.top=y+"px";
+
+}
+</script>
+</html>

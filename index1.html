@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgb(81, 214, 214);
+        }
+        .cuad
+        {
+            position: absolute;
+            left: 200px;
+            top: 150px;
+            width: 200px;
+            height: 300px;
+            background: brown;
+            border: black 5px solid;
+        }
+        .ing
+        {
+            position: absolute;
+            left: 70px;
+            top: 230px;
+            width:50px;
+            height: 50px;
+            background: rgb(42, 165, 52); 
+            border: black 5px solid;
+        }
+        .menu
+        {
+            position: absolute;
+            left: 500px;
+            top: 150px;
+            width: 200px;
+            background: rgb(236, 28, 28);   
+            padding: 5px;
+            box-sizing: border-box;
+            border: black 5px solid;
+        }
+        #n
+        {
+            position: absolute;
+            left: 40px;
+            top:50px;
+            width: 100px;
+            height: 25px;
+           
+            
+        }
+        #p
+        {
+            position: absolute;
+            left: 40px;
+            top:150px;
+            width: 100px;
+            height: 25px;
+            
+            
+        }
+        .b
+        {
+        position: absolute;
+        left: 750px;
+        top: 200px;
+        width: 90px;
+        height: 50px;
+        background: rgb(42, 165, 52);
+        border: black 5px solid;
+        }
+        .p1
+        {
+            position: absolute;
+        left: 975px;
+        top: 500px;
+        width: 150px;
+        height: 100px;
+        background: greenyellow;
+        }
+        .p2
+        {
+            position: absolute;
+        left: 1175px;
+        top: 500px;
+        width: 150px;
+        height: 100px;
+        background: greenyellow;
+        }
+        .t
+        {
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            font-size: 50px;
+            font-weight: 100;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <label class="cuad">
+        <input type="text" placeholder="Nombre" id="n">
+        <input type="text" placeholder="Precio" id="p">
+        <div class="ing" onclick="ingreso()"></div>
+    </label>
+    <div id="me" class="menu">MENÚ</div>
+    <div class="b" onclick="borra()">Borrar menú</div>
+    <a href="index.html">
+        <div class="p1"><div class="t" style="font-size: 25px;left:0px;top:0px;">INICIO</div></div>
+    </a>
+    <a href="index2.html">
+     <div class="p2"><div class="t" style="font-size: 25px;left:0px;top:0px;">CUADRO CON SONIDOS</div></div>
+</body>
+<script>
+    function ingreso()
+    {
+        con=me.innerHTML;
+        pre=Number(p.value);
+        nom=n.value;
+        nt=con+"<br><br>"+pre+"    "+nom;
+        me.innerHTML=nt;
+    }
+    function borra()
+    {
+        me.innerHTML="MENÚ<br>";
+    }
+</script>
+</html>
